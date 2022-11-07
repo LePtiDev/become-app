@@ -1,0 +1,30 @@
+/* Toaster */
+.v--default-css{
+    padding: 16px !important;
+    @media screen and (max-width: 700px) {
+        padding: 8px !important;
+    }
+    .c-toast{
+        @media screen and (max-width: 700px) {
+            width: calc(100vw - 16px) !important;
+            text-align: center;
+        }
+    }
+    .c-toast--success{
+        background-color: rgba(34, 197, 94, 0.7) !important; //bg-green-500
+        backdrop-filter: blur(20px);
+        border: solid 2px rgb(34, 197, 94);
+    }
+    .c-toast--error{
+        background-color: rgba(244, 63, 94, 0.7) !important; //bg-rose-500
+        backdrop-filter: blur(20px);
+        border: solid 2px rgb(244, 63, 94);
+    }
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}  
